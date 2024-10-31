@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<section>
+  <form id="form">
+  <h2>Contact Us</h2>
+  <div class="name-section">
+  <div class="fname">
+    <label for="name"> First Name*</label>
+    <input type="text" id="fname" placeholder="Enter first name">
+     <span class="required-field"></span> 
+  </div>
+   <div class="fname">
+    <label for="name">Last Name*</label>
+     <input type="text" id="lname" placeholder="Enter last name" >
+     <span class="required-field"></span> 
+   </div>
+   
+    </div>
+
+
+<div class="email-sec">
+  <label for="email"> Email Address*(required)</label><br>
+  <input type="email" id="email"  autocomplete="email" aria-invalid="true" aria-describedby="email-error"> 
+ 
+  <span class="valid-prompt"> Please enter a valid email address</span>
+    <span class="required-field"></span> 
+</div>
+  
+
+  <div class="radio-btn">
+    <label for="query">Query Type*</label><br><br>
+    <input type="radio" name="General" value="General Enquiry" id="General Enquiry">
+    <label for="gquery">General Enquiry</label>
+    <input type="radio" name="General" value="Support Request" id="Support Request">
+    <label for="squery">Support Request</label><br>
+   <span class="required-field"></span>
+  </div>
+ 
+<div class="message">
+  <label for="message"> Message*</label><br>
+ <textarea name="message" id="message"></textarea>
+ <span class="required-field"></span> 
+</div>
+ 
+<div class="checkbox">
+  <input type="checkbox" name="checkbox" id="checkbox">
+  <label for="checkbox">I consent to being contacted by the team*</label><br>
+   <span class="required-field"> <span> 
+  </div>
+ 
+<button type="submit" id="btn">Submit</button>
+
+  <!-- Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+</form>
+</section>
+
+<script src="contact-form.js"></script>
+</body>
+</html>
